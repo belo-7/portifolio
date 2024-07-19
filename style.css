@@ -5,6 +5,7 @@
 body {
   background: black;
   color: white;
+  font-family: sans-serif;
 }
 
 .container {
@@ -12,8 +13,6 @@ body {
   width: 100%;
   height: 100vh;
   background: black;
-  background-image: url(/images/pexels-thisisengineering-3861972.jpg) height=
-    "200px" width= "200px";
 }
 nav {
   display: flex;
@@ -32,24 +31,62 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-size: 20px;
 }
 nav ul li a:hover {
   color: red;
 }
 
 .detail {
-  margin-left: 8%;
-  margin-top: 15%;
+  margin: 15% auto;
   color: white;
+  width: 710px;
 }
 .detail h1 {
-  font-size: 50px;
+  font-size: 100px;
   color: white;
   margin-bottom: 20px;
 }
 .detail p {
-  line-height: 22px;
+  font-size: 24px;
+  text-align: center;
 }
 #about {
+  margin: 0 auto;
   padding: 80px 0;
+  color: white;
+  width: 710px;
+  justify-content: center;
+  font-size: 20px;
 }
+.project-1,a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 50px;
+  font-size: 40px;
+}
+.project-1 {
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  border-color: #fff;
+  text-align: center;
+  background-color: silver;
+  margin: 0 auto;
+}
+.projects{
+background-color: chocolate;
+width: 100%;
+height: 450px;
+}
+.projects {
+text-align: center;
+padding: 30px 0;
+font-size: 50px;
+}
+.projects ul {
+display: flex;
+}
+
+
