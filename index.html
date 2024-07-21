@@ -3,63 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>personal portfolio</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <img src="/portifolio/images/logo.jpg" height="93px" alt="logo" />
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="images/Home.jpg" height="25px" width="25px"
-              /></a>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-        <div class="detail">
+    <section class="Navigation">
+      <div class="Logo-Wrapper">
+        <img src="/portifolio/images/logo.jpg" alt="" />
+      </div>
+      <div class="Navigator-Wrapper">
+        <ul>
+          <li>
+            <a class="Home-Button" href="#Home"
+              ><img src="images/Home.jpg" alt=""
+            /></a>
+          </li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Project">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="Home" id="Home">
+      <div class="Show-Wrapper">
+        <dev class="Name-Wrapper">
           <h1>I'm Blen Terefe</h1>
-          <p>
-            This is my portfolio website to showes all <br />
-            details and work experience
-          </p>
-        </div>
+        </dev>
+        <p>
+          This is my portfolio website to show all <br />
+          details and work experience
+        </p>
       </div>
-      <div id="about">
-        <div>
-          <h1>About Me</h1>
-          <p>
-            I have spent the past three years developing a medium foundation in
-            web development and software engineering.I have excelled in core
-            information systems courses such as Data Structures and Algorithms,
-            c++, java(object oriented), html, css, javascript, fundamental and
-            advanced database.I am excited about the prospect of joining in your
-            company and contributing my knowledge,enthusiasm,and dedication to
-            the success of the organization.I am excited candidate for this
-            internship opportunity,and I am committed to use this experience to
-            further enhance my professional development.
-          </p>
-        </div>
+    </section>
+    <section class="About" id="About">
+      <h2>About Me</h2>
+      <div class="para-wrapper">
+        <p>
+          I have spent the past three years developing a medium foundation in
+          web development and software engineering. I have worked in core
+          information systems courses such as Data Structures and Algorithms,
+          c++, java(object oriented), html, css, javascript, fundamental and
+          advanced database. I am excited for this internship opportunity,and I
+          am committed to use this experience to further enhance my professional
+          development.
+        </p>
       </div>
-        <div class="projects">
-          <h1 class="hone">Projects</h1>
+    </section>
+    <section class="Project" id="Project">
+      <h2>Projects</h2>
+      <div class="Project-Wrapper">
+        <div class="Project-Button Project-1">
           <ul>
-            <li class="project-1">
-              <a href="projects/pappypage/index.html">Project 1</a>
-            </li>
-            <li class="project-1">
-              <a href="projects/sprint 1/index.html">Project 2</a>
-            </li>
+            <a href="projects/pappypage/index.html">Project 1</a>
           </ul>
         </div>
-      <div class="contacts"></div>
-      
-    </header>
+        <div class="Project-Button Project-2">
+          <ul>
+            <a href="projects/sprint 1/index.html">Project 2</a>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="Contact" id="Contact">
+      <h2>Contact Me</h2>
+      <div class="Contact-Wrapper">
+        <div class="contact-form">
+          <h3>Send me a message</h3>
+          <form>
+            <div class="form-group">
+              <input type="text" name="name" required placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" value="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact information</h3>
+          <div class="phone">
+            <img src="images/phone.png" alt="" />
+            <p>+251(0)972 12 04 89</p>
+          </div>
+          <br />
+          <div class="email">
+            <img src="images/email.png" alt="" />
+            <p>blenterefe611@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
